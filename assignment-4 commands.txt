@@ -1,0 +1,48 @@
+https://github.com/vdhul1/assignment-4.git
+
+git init
+git remote add origin https://github.com/vdhul1/assignment-4.git
+git remote
+nano master.txt
+git add .
+git status
+git commit -m "masterfile commit on master"
+git branch
+git branch public1
+git branch public2
+git branch private
+git branch
+git checkout public1
+nano public1.txt
+git status
+git add .
+git commit -m "public1.txt in public"
+git branch
+git checkout public2
+nano public2.txt
+git status
+git add .
+git commit -m "public2.txt public2 branch"
+git status
+git checkout master
+git merge public1
+git merge public2
+git merge private
+git checkout private
+nano master.txt
+git status
+git commit -m "master.txt changes in private branch commit"
+git add .
+git commit -m "master.txt changes in private branch commit"
+git checkout public1
+git merge private
+git checkout public2
+git merge private
+git checkout master
+git merge private
+git checkout private
+git merge master
+git merge public1
+git merge public2
+git merge master
+git push origin master public1 public2 private
